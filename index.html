@@ -229,9 +229,9 @@
       <h2 class="section-title">Start a Prototype Conversation</h2>
       <div class="contact-content">
         <div class="contact-info">
-          <h3>Tell me what you are trying to build</h3>
+          <h3>What are you are trying to build?</h3>
           <p>Reach out if you have an idea, a partial app, a hardware/software integration challenge, or an early
-            product that needs a clearer path to prototype.</p>
+            product that needs a clear path to prototype.</p>
           <p class="contact-note">Include what exists today, where you are stuck, and what the first working prototype
             needs to prove.</p>
 
@@ -248,7 +248,8 @@
         </div>
 
         <div class="contact-form">
-          <form id="contactForm">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="8e9e11ef-8d4d-4bc2-8a23-2934b04b0bfe">
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required>

@@ -50,9 +50,13 @@ Recast the capability cards around founder problems:
 
 Each card should describe a concrete way Mountain Sentry helps reduce ambiguity and move the product closer to something users, investors, or partners can evaluate.
 
-### ShotSense
+### Prior Work
+
+ShotSense:
 
 Keep the ShotSense section, but frame it as evidence of connected product experience. It should show that Mountain Sentry has built a real app-plus-hardware product involving embedded hardware, BLE, motion sensing, and an iOS experience.
+
+
 
 ### Contact
 
