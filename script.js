@@ -29,48 +29,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const subject = formData.get('subject');
-    const message = formData.get('message');
-
-    // Simple validation
-    if (!name || !email || !subject || !message) {
-      alert('Please fill in all fields');
-      return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert('Please enter a valid email address');
-      return;
-    }
-
-    // Simulate form submission
-    const submitButton = this.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-
-    // Simulate API call
-    setTimeout(() => {
-      alert('Thank you for your message! We will get back to you soon.');
-      this.reset();
-      submitButton.textContent = originalText;
-      submitButton.disabled = false;
-    }, 2000);
-  });
-}
-
 // Navbar background change on scroll
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
@@ -101,7 +59,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
   const animateElements = document.querySelectorAll(
-    '.service-card, .stat, .contact-form'
+    '.service-card, .product-card, .stat, .contact-form'
   );
   animateElements.forEach((el) => {
     el.style.opacity = '0';

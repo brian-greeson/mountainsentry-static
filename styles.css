@@ -450,8 +450,8 @@ body {
   font-weight: bold;
 }
 
-/* ShotSense Section */
-.shotsense {
+/* Products Section */
+.products {
   padding: 5rem 0;
   background:
     radial-gradient(circle at top right,
@@ -461,26 +461,26 @@ body {
   color: white;
 }
 
-.shotsense .section-title,
-.shotsense .section-intro {
+.products .section-title,
+.products .section-intro {
   color: white;
 }
 
-.shotsense .section-intro {
+.products .section-intro {
   color: rgba(255, 255, 255, 0.76);
 }
 
-.shotsense-header {
+.products-header {
   margin-bottom: 3rem;
 }
 
-.shotsense-grid {
+.products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
-.shotsense-card {
+.product-card {
   padding: 2rem;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.08);
@@ -488,35 +488,70 @@ body {
   box-shadow: 0 20px 40px rgba(8, 18, 29, 0.18);
 }
 
-.shotsense-card-primary {
+.product-card-glidehero {
+  background: linear-gradient(180deg,
+      rgba(31, 122, 120, 0.28),
+      rgba(255, 255, 255, 0.08));
+}
+
+.product-card-shotsense {
   background: linear-gradient(180deg,
       rgba(210, 104, 57, 0.2),
       rgba(255, 255, 255, 0.08));
 }
 
-.shotsense-card h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  margin-bottom: 1rem;
-  font-size: 1.35rem;
+.product-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
 }
 
-.shotsense-card p,
-.shotsense-card li {
+.product-icon {
+  flex: 0 0 auto;
+  width: 3.25rem;
+  height: 3.25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffd9c7;
+  font-size: 1.4rem;
+}
+
+.product-type {
+  margin-bottom: 0.15rem;
+  color: #ffd9c7;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.product-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.15;
+}
+
+.product-card>p,
+.product-card li {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.shotsense-card ul {
+.product-card ul {
   list-style: none;
   display: grid;
   gap: 0.8rem;
+  margin: 1.5rem 0;
 }
 
-.shotsense-card li {
+.product-card li {
   position: relative;
   padding-left: 1.5rem;
 }
 
-.shotsense-card li::before {
+.product-card li::before {
   content: '';
   position: absolute;
   left: 0;
@@ -525,6 +560,30 @@ body {
   height: 0.55rem;
   border-radius: 999px;
   background: #ffd9c7;
+}
+
+.product-link,
+.product-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 700;
+}
+
+.product-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+  padding-bottom: 0.15rem;
+}
+
+.product-link:hover {
+  color: #ffd9c7;
+}
+
+.product-status {
+  color: rgba(255, 255, 255, 0.68) !important;
+  font-size: 0.9rem;
 }
 
 /* Contact Section */
@@ -740,6 +799,10 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
   .hero-buttons {
     justify-content: center;
   }
@@ -762,7 +825,7 @@ body {
     padding: 1.5rem;
   }
 
-  .shotsense-card,
+  .product-card,
   .contact-form,
   .about-panel {
     padding: 1.5rem;
