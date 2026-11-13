@@ -25,7 +25,7 @@ The update uses one shared layout and type system, a restrained green and cream 
 
 ## Privacy policy basis and release work
 
-The policy reflects the owner's confirmation on November 13, 2026 that the apps send nothing off the device. Website messages are treated separately because the contact form uses Web3Forms. Review the policy whenever those practices change.
+The policy uses the owner's supplied text dated November 13, 2026. It covers local processing, optional network features and integrations, support submissions, and third-party services. Privacy questions and deletion requests go to support@mountainsentry.com. Review the policy whenever those practices change.
 
 The policy covers collection and use, provider sharing, retention and deletion, consent withdrawal, and contact details described in [Apple's privacy policy requirements](https://developer.apple.com/app-store/review/guidelines/#5.1.1).
 
@@ -33,7 +33,7 @@ Before releasing an app:
 
 - Publish the policy at the existing public `/privacy-policy.html` URL and link it in both App Store Connect and the app.
 - Check the app and its dependencies against the stated practices, and complete the matching [App Privacy disclosures](https://developer.apple.com/app-store/app-privacy-details/).
-- Verify that the privacy and legal mailboxes receive messages and that website provider arrangements support the policy's commitments.
+- Verify that the support and legal mailboxes receive messages and that website provider arrangements support the policy's commitments.
 
 Updating this repository does not deploy the site or validate an app binary, App Store Connect configuration, provider contracts, or mailbox delivery.
 
