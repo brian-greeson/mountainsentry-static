@@ -1,148 +1,42 @@
-# Mountain Sentry - Business Website
+# Mountain Sentry
 
-A professional business website for Mountain Sentry, specializing in mobile app development and bicycle safety products. This website is designed to help establish your business presence for DUNS number applications and general business operations.
+Static company website for software and product engineering. No build step or runtime dependencies.
 
-## Features
+## Preview
 
-- **Professional Design**: Modern, responsive design suitable for business applications
-- **Mobile-First**: Fully responsive design that works on all devices
-- **Interactive Elements**: Smooth animations and user-friendly interactions
-- **Contact Form**: Functional contact form for customer inquiries
-- **Business Information**: Clear presentation of business details for DUNS applications
-- **Legal Pages**: Privacy Policy and Terms of Service for compliance
-- **Company Logo**: Professional SVG logo integrated throughout the website
+Run `python3 -m http.server 4173` from this directory, then open `http://localhost:4173`.
 
-## Business Information
+## Files
 
-### Company Details
+- `index.html`: services, working approach, and contact form.
+- `privacy-policy.html`: company-wide privacy policy.
+- `terms-of-service.html`: service terms.
+- `styles.css`: shared layout, responsive rules, and legal page styles.
+- `script.js`: accessible mobile navigation. Links and the form work without JavaScript.
+- `logo.svg`: existing company mark.
 
-- **Business Name**: Mountain Sentry
-- **Business Type**: Technology & Safety Products Company
-- **Services**:
-  - Mobile App Development (iOS/Android)
-  - Bicycle Safety Products
-  - Technology Solutions
-- **Location**: United States
-- **Established**: 2024
+The contact form posts directly to Web3Forms. Its access key is a public form identifier, not a private API credential. No test messages are sent during local checks.
 
-### Contact Information
+## Design review and changes — November 13, 2026
 
-- **Email**: info@mountainsentry.com
+The previous site had competing hero buttons, repeated sales copy, uneven card spacing, and different navigation, fonts, and padding on the legal pages. Some legal-page links pointed to sections that no longer existed. Decorative JavaScript hid content on load and moved cards on hover.
 
-## Getting Started
+The update uses one shared layout and type system, a restrained green and cream palette, aligned service columns, and a single primary contact action. Product names and the project showcase have been removed. Legal pages share the site header and footer, with readable text widths and section links. The mobile menu uses a real button, supports Escape, and exposes its expanded state. Reduced motion is respected. Fonts and graphics load locally without font or icon CDNs.
 
-### Prerequisites
+## Privacy policy basis and release work
 
-- A web server or local development environment
-- Modern web browser
+The policy reflects the owner's confirmation on November 13, 2026 that the apps send nothing off the device. Website messages are treated separately because the contact form uses Web3Forms. Review the policy whenever those practices change.
 
-### Installation
+The policy covers collection and use, provider sharing, retention and deletion, consent withdrawal, and contact details described in [Apple's privacy policy requirements](https://developer.apple.com/app-store/review/guidelines/#5.1.1).
 
-1. Download all files to your web server directory
-2. Ensure all files are in the same directory:
-   - `index.html`
-   - `styles.css`
-   - `script.js`
-   - `README.md`
+Before releasing an app:
 
-### Running the Website
+- Publish the policy at the existing public `/privacy-policy.html` URL and link it in both App Store Connect and the app.
+- Check the app and its dependencies against the stated practices, and complete the matching [App Privacy disclosures](https://developer.apple.com/app-store/app-privacy-details/).
+- Verify that the privacy and legal mailboxes receive messages and that website provider arrangements support the policy's commitments.
 
-1. Open `index.html` in a web browser
-2. Or upload files to a web hosting service
-3. The website will be accessible at your domain
+Updating this repository does not deploy the site or validate an app binary, App Store Connect configuration, provider contracts, or mailbox delivery.
 
-## Customization
+## Checks
 
-### Updating Business Information
-
-Edit the following sections in `index.html`:
-
-1. **Company Name**: Update "Mountain Sentry" throughout the file
-2. **Contact Information**: Update email address
-3. **Business Description**: Modify the about section content
-4. **Services**: Update service descriptions and offerings
-
-### Styling
-
-- Edit `styles.css` to change colors, fonts, and layout
-- Primary color: `#2563eb` (blue)
-- Font: Inter (Google Fonts)
-
-### Functionality
-
-- Edit `script.js` to modify interactive features
-- Contact form validation and submission handling
-- Smooth scrolling and animations
-
-### Legal Pages
-
-- **Privacy Policy** (`privacy-policy.html`): Comprehensive privacy policy covering data collection, usage, and user rights
-- **Terms of Service** (`terms-of-service.html`): Complete terms and conditions for website usage and services
-- Both pages are professionally formatted and legally compliant
-
-## DUNS Number Application
-
-This website provides the necessary business information for DUNS number applications:
-
-### Required Information Included:
-
-- ✅ Business name and type
-- ✅ Contact information (email)
-- ✅ Business description
-- ✅ Services offered
-- ✅ Professional presentation
-
-### Additional Steps for DUNS Application:
-
-1. **Register your domain** (e.g., mountainsentry.com)
-2. **Set up business email** (info@mountainsentry.com)
-3. **Apply for DUNS number** at [Dun & Bradstreet](https://www.dnb.com/duns-number/get-a-duns-number.html)
-
-## File Structure
-
-```
-mountainsentry/
-├── index.html          # Main HTML file
-├── styles.css          # CSS styling
-├── script.js           # JavaScript functionality
-├── privacy-policy.html # Privacy Policy page
-├── terms-of-service.html # Terms of Service page
-├── logo.svg            # Company logo
-└── README.md          # This file
-```
-
-## Browser Compatibility
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers
-
-## Performance
-
-- Optimized for fast loading
-- Minimal external dependencies
-- Responsive images and icons
-- Efficient CSS and JavaScript
-
-## Security
-
-- No external data collection
-- Form validation on client-side
-- Secure coding practices
-- No sensitive information stored
-
-## Support
-
-For questions about the website or DUNS number application process, contact:
-
-- Email: info@mountainsentry.com
-
-## License
-
-This website template is created for Mountain Sentry business use.
-
----
-
-**Note**: Remember to update all placeholder information (phone numbers, addresses, etc.) with your actual business details before using this website for official business purposes.
+Run `node tests/check-contact-form.mjs`, `node --check script.js`, and `git diff --check`. Review all three pages at desktop and narrow mobile widths after layout changes.

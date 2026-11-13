@@ -1,332 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mountain Sentry - Contract Software Engineering and Product Development</title>
-  <link rel="stylesheet" href="styles.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-
-<body>
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-logo">
-        <img src="logo.svg" alt="Mountain Sentry Logo" class="logo-img">
-        <h2>Mountain Sentry</h2>
-      </div>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#home" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#capabilities" class="nav-link">Capabilities</a>
-        </li>
-        <li class="nav-item">
-          <a href="#products" class="nav-link">Products</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="hero-logo">
-          <img src="logo.svg" alt="Mountain Sentry Logo" class="hero-logo-img">
-        </div>
-        <p class="eyebrow">Founder prototype partner</p>
-        <h1>Mountain Sentry</h1>
-        <h2>Turn your connected product idea into a working prototype.</h2>
-        <p>Mountain Sentry helps founders and early-stage startups move from idea, rough app, or technical uncertainty
-          to a prototype people can try, test, and improve. The strongest work happens where mobile apps, software,
-          sensors, and connected hardware meet.</p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Start a Prototype Conversation</a>
-          <a href="#capabilities" class="btn btn-tertiary">View Capabilities</a>
-          <a href="#products" class="btn btn-secondary">See Products</a>
-        </div>
-
-      </div>
-      <div class="hero-image">
-        <div class="hero-graphic">
-          <i class="fas fa-mobile-screen-button"></i>
-          <i class="fas fa-code"></i>
-          <i class="fas fa-microchip"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">For Founders Building the First Real Version</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <h3>Hands-on product engineering from idea to initial prototype.</h3>
-          <p>Mountain Sentry works with solo founders and early-stage teams that need practical help making a product
-            real. That can mean shaping the technical path, building the first mobile experience, connecting an app to
-            hardware, or turning a promising partial build into something users can evaluate.</p>
-          <p>Mountain Sentry's own products show that range in practice. GlideHero is a full-stack flight platform for
-            paraglider pilots, while ShotSense combines embedded hardware, Bluetooth Low Energy, motion sensing, and an
-            iOS app. Together, they demonstrate the same product thinking and hands-on engineering Mountain Sentry
-            brings to founder prototypes.</p>
-
-          <!-- <div class="business-info">
-            <div class="info-item">
-              <h4><i class="fas fa-building"></i> Business Type</h4>
-              <p>Software engineering and product development company</p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-briefcase"></i> Availability</h4>
-              <p>Open to contract work and collaboration</p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
-              <p>United States</p>
-            </div>
-            <div class="info-item">
-              <h4><i class="fas fa-diagram-project"></i> Product Portfolio</h4>
-              <p>Parent company of ShotSense</p>
-            </div>
-          </div> -->
-        </div>
-        <div class="about-panel">
-          <h3>Where Founders Get Help</h3>
-          <ul>
-            <li>Clarifying the prototype your idea needs first</li>
-            <li>Choosing a practical app, device, and backend architecture</li>
-            <li>Building across mobile, embedded, BLE, and sensor workflows</li>
-            <li>Getting to a testable version without hiring a full team</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Capabilities Section -->
-  <section id="capabilities" class="services">
-    <div class="container">
-      <h2 class="section-title">Core Capabilities</h2>
-      <p class="section-intro">Mountain Sentry helps founders reduce ambiguity, build the first useful version, and
-        prove the hard parts of products that cross app, software, and hardware boundaries.</p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-briefcase"></i>
-          </div>
-          <h3>Idea to Prototype</h3>
-          <p>Turn a product idea, rough spec, or half-built app into a focused prototype plan and working first version.
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contract development for iOS apps, web software, embedded firmware, and Bluetooth devices.">
+    <meta name="theme-color" content="#183e3b">
+    <title>Mountain Sentry — Software & Product Engineering</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Mountain Sentry home"><img src="logo.svg" width="40" height="40" alt=""><span>Mountain Sentry<span class="brand-detail">Software &amp; product engineering</span></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" hidden>Menu <span aria-hidden="true">+</span></button>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <a href="#capabilities">What we do</a>
+          </li>
+          <li>
+            <a href="#about">How we work</a>
+          </li>
+          <li>
+            <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero container" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="small-rule"></span> Contract software engineering
           </p>
-          <ul>
-            <li>Prototype scope and technical path</li>
-            <li>Architecture choices that match the stage you are in</li>
-            <li>Builds that help users, partners, or investors react to something real</li>
-          </ul>
+          <h1 id="hero-title">
+            Mobile apps<br>and <em>connected<br>hardware.</em>
+          </h1>
+          <p class="hero-intro">
+            Mountain Sentry builds iOS apps, web software, and device firmware.<br>Available for contract development and technical consulting.
+          </p>
+          <a class="button" href="#contact">Discuss a project <span aria-hidden="true">↗</span></a>
         </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-mobile-screen-button"></i>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-heading">
+            <span>MOUNTAIN SENTRY</span><span>APPS / SOFTWARE / DEVICES</span>
           </div>
-          <h3>Hardware + App Integration</h3>
-          <p>Bridge the gap between physical devices and software when your product depends on connected hardware
-            behaving reliably.</p>
-          <ul>
-            <li>Bluetooth Low Energy workflows and device communication</li>
-            <li>Sensor data capture, display, and analysis</li>
-            <li>Embedded-to-mobile product flows that feel coherent</li>
-          </ul>
+          <svg class="mountain-drawing" viewBox="0 0 520 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" stroke="currentColor" stroke-opacity=".12"/></pattern>
+            </defs>
+            <path fill="url(#grid)" d="M0 0h520v470H0z"/>
+            <g stroke="currentColor" stroke-width="1.1" opacity=".45">
+              <path d="M-20 420 90 276 151 315 272 107 383 279 424 242 550 402"/>
+              <path d="M-20 440 90 302 151 341 272 133 383 305 424 268 550 428"/>
+              <path d="M-20 460 90 328 151 367 272 159 383 331 424 294 550 454"/>
+              <path d="M-20 480 90 354 151 393 272 185 383 357 424 320 550 480"/>
+              <path d="M-20 500 90 380 151 419 272 211 383 383 424 346 550 506"/>
+              <path d="M-20 520 90 406 151 445 272 237 383 409 424 372 550 532"/>
+              <path d="M-20 540 90 432 151 471 272 263 383 435 424 398 550 558"/>
+            </g>
+            <path d="m90 276 61 39 121-208 111 172 41-37" stroke="#eebc87" stroke-width="2"/>
+            <circle cx="272" cy="107" r="7" fill="#eebc87"/><circle cx="272" cy="107" r="18" stroke="#eebc87" stroke-opacity=".45"/>
+            <path d="M272 80V43h85" stroke="#eebc87" stroke-opacity=".7"/>
+            <text x="366" y="47" fill="#eebc87" font-family="monospace" font-size="11" letter-spacing="1">DEVELOPMENT</text>
+          </svg>
+          <div class="art-caption">
+            <span class="art-cross">+</span>
+            <p>
+              App development.<br>Hardware integration.
+            </p>
+            <span class="art-index">01 / MS</span>
+          </div>
         </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-cubes"></i>
-          </div>
-          <h3>Mobile Product Development</h3>
-          <p>Build the mobile experience your prototype or early product needs, with attention to reliability,
-            usability, and device integration.</p>
-          <ul>
-            <li>iOS app development and companion app design</li>
-            <li>Real-time data views and feedback loops</li>
-            <li>Polished flows for demos, pilots, and early users</li>
-          </ul>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h3>Startup Engineering Support</h3>
-          <p>Add senior hands-on engineering capacity before you are ready to hire a full product team.</p>
-          <ul>
-            <li>Technical direction for solo founders and small teams</li>
-            <li>Project rescue, acceleration, and delivery support</li>
-            <li>Clear scope, direct communication, and pragmatic execution</li>
-          </ul>
+      </section>
+      <div class="discipline-strip">
+        <div class="container">
+          <span>Contract development and consulting.</span>
+          <p>
+            Mobile apps <span aria-hidden="true">/</span> Software <span aria-hidden="true">/</span> Connected devices
+          </p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="products">
-    <div class="container">
-      <div class="products-header">
-        <p class="eyebrow eyebrow-dark">Products &amp; Projects</p>
-        <h2 class="section-title">Built by Mountain Sentry</h2>
-        <p class="section-intro">Two original products spanning full-stack software, mobile experiences, connected
-          hardware, sensors, maps, and data-rich workflows.</p>
-      </div>
-      <div class="products-grid">
-        <article class="product-card product-card-glidehero">
-          <div class="product-card-heading">
-            <div class="product-icon" aria-hidden="true"><i class="fas fa-wind"></i></div>
-            <div>
-              <p class="product-type">Paragliding software platform</p>
-              <h3>GlideHero</h3>
-            </div>
+      <section class="section container" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading">
+          <p class="eyebrow">
+            01 / What we do
+          </p>
+          <h2 id="capabilities-title">
+            Software development<br>&amp; technical support.
+          </h2>
+          <p>
+            Hire us to develop a prototype, add features to an existing product, or investigate a technical problem.
+          </p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability">
+            <span class="service-number">01</span>
+            <h3>
+              Apps &amp; software
+            </h3>
+            <p>
+              Development for iOS and the web, including the backend services they use.
+            </p>
+            <ul>
+              <li>
+                iOS apps
+              </li>
+              <li>
+                Web apps and backend services
+              </li>
+              <li>
+                Bug fixes and new features
+              </li>
+            </ul>
+          </article>
+          <article class="capability">
+            <span class="service-number">02</span>
+            <h3>
+              Connected hardware
+            </h3>
+            <p>
+              Firmware and app development for devices that communicate over Bluetooth.
+            </p>
+            <ul>
+              <li>
+                Bluetooth communication
+              </li>
+              <li>
+                Embedded firmware
+              </li>
+              <li>
+                Sensor data and live displays
+              </li>
+            </ul>
+          </article>
+          <article class="capability">
+            <span class="service-number">03</span>
+            <h3>
+              Prototypes &amp; consulting
+            </h3>
+            <p>
+              Test a design before committing to a full build, or get help with an existing codebase.
+            </p>
+            <ul>
+              <li>
+                Scope and technical planning
+              </li>
+              <li>
+                Working prototypes
+              </li>
+              <li>
+                Code review and debugging
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <section class="approach" id="about" aria-labelledby="approach-title">
+        <div class="container approach-grid">
+          <div>
+            <p class="eyebrow">
+              02 / How we work
+            </p>
+            <h2 id="approach-title">
+              Scope, development,<br>and handoff.
+            </h2>
+            <p class="approach-intro">
+              We agree on the work before development starts. During the project, we share builds for review and discuss changes as they come up.
+            </p>
           </div>
-          <p>GlideHero turns uploaded flight logs into interactive maps, replays, personal records, achievements, and
-            friendly territory competition for paraglider pilots.</p>
-          <ul>
-            <li>GPS flight processing and interactive map replay</li>
-            <li>Monthly competition, groups, records, and social activity</li>
-            <li>Full-stack web product built for real pilot workflows</li>
-          </ul>
-          <a class="product-link" href="https://glidehero.com" target="_blank" rel="noopener noreferrer">
-            Visit GlideHero <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
-          </a>
-        </article>
-
-        <article class="product-card product-card-shotsense">
-          <div class="product-card-heading">
-            <div class="product-icon" aria-hidden="true"><i class="fas fa-table-tennis-paddle-ball"></i></div>
-            <div>
-              <p class="product-type">Connected sports technology</p>
-              <h3>ShotSense</h3>
-            </div>
-          </div>
-          <p>ShotSense is a compact motion capture device that mounts to a pickleball paddle and streams IMU data to
-            an iOS app over Bluetooth Low Energy.</p>
-          <ul>
-            <li>Embedded firmware, motion sensing, and low-power operation</li>
-            <li>Reliable device-to-app Bluetooth communication</li>
-            <li>Objective swing feedback and post-session analysis</li>
-          </ul>
-          <p class="product-status"><i class="fas fa-flask" aria-hidden="true"></i> Prototype in development</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Start a Prototype Conversation</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <h3>What are you are trying to build?</h3>
-          <p>Reach out if you have an idea, a partial app, a hardware/software integration challenge, or an early
-            product that needs a clear path to prototype.</p>
-          <p class="contact-note">Include what exists today, where you are stuck, and what the first working prototype
-            needs to prove.</p>
-
-          <div class="contact-details">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
+          <ol class="steps">
+            <li>
+              <span>01</span>
               <div>
-                <h4>Email</h4>
-                <p>info@mountainsentry.com</p>
+                <h3>
+                  Define the work.
+                </h3>
+                <p>
+                  We review your requirements and any existing code, then agree on deliverables and priorities.
+                </p>
               </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>
+                  Develop and test.
+                </h3>
+                <p>
+                  We write the software, test it, and share progress so you can review it during development.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>
+                  Review and hand off.
+                </h3>
+                <p>
+                  We review the deliverables with you and hand over the source code, setup instructions, and any known issues.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="section container contact-grid" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy">
+          <p class="eyebrow">
+            03 / Get in touch
+          </p>
+          <h2 id="contact-title">
+            Contact<br>Mountain Sentry.
+          </h2>
+          <p>
+            Describe the work you need, your timeline, and any software or hardware you’re already using.
+          </p>
+          <a class="email-link" href="mailto:info@mountainsentry.com">info@mountainsentry.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="8e9e11ef-8d4d-4bc2-8a23-2934b04b0bfe">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" required>
             </div>
-
+            <div class="form-field">
+              <label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
           </div>
-        </div>
-
-        <div class="contact-form">
-          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="8e9e11ef-8d4d-4bc2-8a23-2934b04b0bfe">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Start Conversation</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="logo.svg" alt="Mountain Sentry Logo" class="footer-logo-img">
-            <h3>Mountain Sentry</h3>
+          <div class="form-field">
+            <label for="subject">Subject</label><input type="text" id="subject" name="subject" required>
           </div>
-          <p>Founder-focused prototype development for products where mobile apps, software, and connected hardware
-            meet.</p>
+          <div class="form-field">
+            <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="form-submit">
+            <p>
+              Your message is sent through Web3Forms.<br>Read our <a href="privacy-policy.html">privacy policy</a>.
+            </p>
+            <button type="submit" class="button">Send message <span aria-hidden="true">↗</span></button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <a class="brand" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Mountain Sentry</span></a>
+          <p>
+            Software development &amp; hardware integration.
+          </p>
         </div>
-        <div class="footer-section">
-          <h4>Capabilities</h4>
-          <ul>
-            <li><a href="#capabilities">Contract Engineering</a></li>
-            <li><a href="#capabilities">Mobile Development</a></li>
-            <li><a href="#capabilities">Product Development</a></li>
-            <li><a href="#products">GlideHero</a></li>
-            <li><a href="#products">ShotSense</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <ul>
-            <li>info@mountainsentry.com</li>
-          </ul>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2026 Mountain Sentry
+          </p>
+          <nav aria-label="Legal">
+            <a href="privacy-policy.html">Privacy policy</a><a href="terms-of-service.html">Terms of service</a><a href="mailto:info@mountainsentry.com">Email us <span aria-hidden="true">↗</span></a>
+          </nav>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Mountain Sentry. All rights reserved. |
-          <a href="privacy-policy.html">Privacy Policy</a> |
-          <a href="terms-of-service.html">Terms of Service</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+    </footer>
+  </body>
 </html>
